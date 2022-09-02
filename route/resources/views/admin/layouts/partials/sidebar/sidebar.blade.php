@@ -33,10 +33,34 @@ use App\Models\Pengaturan\Menu;
             <span>Dashboard</span>
         </a>
     </li>
-     <li class="{{ Request::is('/teritory') ? 'active' : '' }}">
+     <li class="{{ Request::is('/teritory') ? 'active' : 'teritory' }}">
         <a href="{{ url('/teritory') }}">
             <i class="fa fa-files-o"></i>
             <span>teritory</span>
+        </a>
+    </li>
+    <li class="{{ Request::is('/customerTeritory') ? 'active' : '' }}">
+        <a href="{{ url('/customerTeritory') }}">
+            <i class="fa fa-files-o"></i>
+            <span>customer to teritory</span>
+        </a>
+    </li>
+    <li class="{{ Request::is('/routeTeritory') ? 'active' : '' }}">
+        <a href="{{ url('/routeTeritory') }}">
+            <i class="fa fa-files-o"></i>
+            <span>route toteritory</span>
+        </a>
+    </li>
+    <li class="{{ Request::is('/customerRoute') ? 'active' : '' }}">
+        <a href="{{ url('/customerRoute') }}">
+            <i class="fa fa-files-o"></i>
+            <span>customer to route</span>
+        </a>
+    </li>
+    <li class="{{ Request::is('/teritory') ? 'active' : '' }}">
+        <a href="{{ url('/teritory') }}">
+            <i class="fa fa-files-o"></i>
+            <span>bulk scheduling</span>
         </a>
     </li>
 </ul>

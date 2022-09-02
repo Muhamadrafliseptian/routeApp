@@ -1,6 +1,6 @@
 @extends('admin.layouts.template')
 
-@section('title', 'Teritory')
+@section('title', 'Customer to Route' )
 
 @section('css')
     <link rel="stylesheet" href="{{ url('/template') }}/bower_components/datatables.net-bs/css/dataTables.bootstrap.min.css">
@@ -23,11 +23,17 @@
     </section>
 @endsection
 @section('content')
-<table id="example" class="table text-center table-striped table-bordered" style="width:100%">
+<table id="example" class="table table-striped table-bordered" style="width:100%">
         <thead>
             <tr>
                 <th>No</th>
+                <th>Trade Approach</th>
                 <th>Teritory</th>
+                <th>Customer ID</th>
+                <th>Customer Name</th>
+                <th>Order</th>
+                <th>Customer Name</th>
+                <th>Route</th>
                 <th>Aksi</th>
             </tr>
         </thead>
@@ -35,6 +41,12 @@
             <tr>
                 <td>1</td>
                 <td><a href="{{ url('teritory') }}" style="text-decoration: none">MDN_DSS022</a></td>
+                <td><a href="{{ url('teritory') }}" style="text-decoration: none">MDN_DSS022</a></td>
+                <td><a href="{{ url('teritory') }}" style="text-decoration: none">2910</a></td>
+                <td><a href="{{ url('teritory') }}" style="text-decoration: none">1281102</a></td>
+                <td><a href="{{ url('teritory') }}" style="text-decoration: none">1281102</a></td>
+                <td><a href="{{ url('teritory') }}" style="text-decoration: none">1281102</a></td>
+                <td><a href="{{ url('teritory') }}" style="text-decoration: none">1281102</a></td>
                 <td>
                     <button class="btn-sm btn-warning">Edit</button>
                     <button class="btn-sm btn-danger">Delete</button>
