@@ -18,9 +18,16 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get("/", [DashboardController::class, "index"]);
-Route::get("/teritory", [TeritoryController::class, "index"]);
-Route::get("/routeTeritory", [RouteTeritoryController::class, "index"]);
-Route::get("/customerTeritory", [CustomerTeritoryController::class, "index"]);
-Route::get("/customerRoute", [CustomerRouteController::class, "index"]);
 
+Route::prefix("master")->group(function () {
+
+Route::resource("/", DashboardController::class);
+
+Route::resource("teritory", TeritoryController::class);
+
+Route::resource("customerTeritory", CustomerTeritoryController::class);
+
+Route::resource("routeTeritory", RouteTeritoryController::class);
+
+Route::resource("customerRoute", CustomerRouteController::class);
+});
